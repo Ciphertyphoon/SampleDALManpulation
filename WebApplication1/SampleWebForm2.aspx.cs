@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DALAppLIBy;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
@@ -6,6 +7,8 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+
+
 
 namespace WebApplication1
 {
@@ -17,7 +20,7 @@ namespace WebApplication1
         }
         protected void Button1_Click(object sender, EventArgs e)
         {
-            DALObj dal = new DALObj();
+            DALObj1 dal = new DALObj1();
 
             DataSet ds = dal.BindGrid();
             gvCustomers.DataSource = ds.Tables[0];

@@ -4,11 +4,12 @@ using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
-using System.Web;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace WebApplication1
+namespace DALAppLib
 {
-    public class DALObj
+    public class DALObj1
     {
         public DataSet BindGrid()
         {
